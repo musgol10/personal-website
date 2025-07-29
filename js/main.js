@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'play':
                 const songName = args[0];
                 if (songName && window.XMPlayer) {
-                    loadAndPlaySong(`/xms/${songName}`);
+                    loadAndPlaySong(`/beats/${songName}`);
                     printToTerminal(`Attempting to play ${songName}...`);
                 } else {
                     printToTerminal("Usage: play [song_filename.xm]", 'error');
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const songList = ["calm.xm", "chillout.xm", "arcadeaction.xm", "music2.xm", "dbz.xm", "clocks.xm"];
         const songToPlay = songList[0]; // Simplified for now
-        loadSong("/xms/" + songToPlay);
+        loadSong("/beats/" + songToPlay);
     }
 
     // --- Easter Eggs and Effects ---

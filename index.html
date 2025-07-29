@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ali Twil - AI & Data Product Manager</title>
+  <meta name="description" content="Data Product Manager & Senior Data Scientist" />
+  <meta name="keywords"
+    content="AI, Data Product Manager, GenAI, RAG, LLM, Data Science, Python, NLP" />
+  <meta charset="utf-8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ali Twil Personal Website" />
+  <meta property="og:description" content="Ali Twil Personal Website" />
+  <meta property="og:image" content="https://www.alitwil.me/imgs/facebook.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ali Twil Personal Website" />
+  <meta name="twitter:description" content="Ali Twil Personal Website" />
+  <meta name="twitter:image" content="https://www.alitwil.me/imgs/x.png" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="imgs/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body>
+  <div class="layout">
+    <div class="anime-container"></div>
+    <div id="stars"></div>
+    <div class="full-name">
+      <div class="name"><a href="#" onclick="showPage('front')"><span class="trans" trans="Ali">Ali</span><br /><span class="trans" trans="Twil">Twil</span></a></div>
+      <div id="playpause">🔊</div><button class="button" id="toggleLang">FR</button>
+    </div>
+    <div class="social">
+      <a href="mailto:alitwil9@gmail.com " target="_blank" class="trans" trans="Me contacter">Contact me</a>
+      <a href="https://www.linkedin.com/in/ali-twil/" target="_blank" class="trans" trans="Linkedin">Linkedin</a>
+      <a href="https://github.com/atw-9" target="_blank" class="trans" trans="Github">Github</a>
+      <a href="https://x.com/alitwil9" target="_blank" class="trans" trans="𝕏 Twitter">𝕏 Twitter</a>
+    </div>
+    <div class="projects"><a href="#" onclick="showPage('projects')" class="button trans" trans="Projets">Projects</a></div>
+    <a href="#" onclick="event.preventDefault(); document.getElementById('pdfOverlay').style.display='flex';" class="email button trans" trans="CV">Resume</a>
+    
+    <div class="content">
+      <div id="front" class="page fadeIn">
+        <div class="about">
+          <div class="profile"><img src="imgs/pixled-image.png" alt="nft image" /></div>
+          <div class="intro"><span class="trans" trans="Manager Produit Data">Data Product Manager</span><span
+              class="trans" trans=""> &</span>
+            <div class="bold trans" trans="Ex-Data Scientist Sr.">Ex-Sr. Data Scientist</div>
+          </div>
+          <div class="desc trans" trans="
+              Ph.D. en Data Science & Chef de Produit IA.<br />
+              J'architecte des systèmes intelligents qui génèrent un impact business concret.<br />
+              Passionné par la Data. 💾
+            ">
+            Ph.D. in Data Science & AI Product Manager.<br />
+            I architect intelligent systems that deliver real-world business impact.<br />
+            Passionate about Data.
+          </div>
+          <div><a href="#" onclick="showPage('bio')" class="button trans" trans="Bio">Bio</a></div>
+          <div style="display: inline-flex; gap: 10px; margin-top: 10px; margin-right: 10px">
+            <a href="#" onclick="showPage('case-studies')" class="button trans" trans="Études de Cas">Case Studies</a>
+            <a href="#" onclick="showPage('ai-research')" class="button trans" trans="Recherche IA">AI Research</a>
+          </div>
+          <div style="display: inline-flex; gap: 10px; margin-top: 10px">
+            <a href="#" onclick="showPage('my-toolkit')" class="button trans" trans="Boîte à Outils">My Toolkit</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS PAGE -->
+      <div id="projects" class="page page-popup fadeOut">
+        <img src="imgs/cross.png" alt="Close" class="bio-close-button" onclick="closePopup()">
+        <h1>Projects Built/Contributed to</h1>
+        <div class="list">
+            <div class="project">
+              <img src="imgs/projects/athena.png" alt="Athena Project Screenshot" />
+              <div class="project-details">
+                <div class="project-title">Internal AI Assistant</div>
+                <div class="desc">
+                  An internal AI assistant designed to enhance employee productivity by providing smart, secure, and real-time access to organizational knowledge. It leverages on-premise LLMs, integrates with internal tools, and offers features like document analysis and interactive querying. Built with a privacy-first design to align with corporate compliance standards.
+                </div>
+                <div class="project-techs">
+                  <span>GenAI</span>
+                  <span>LLM</span>
+                  <span>Python</span>
+                  <span>On-Premise Deployment</span>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img src="imgs/projects/rag.png" alt="RAG CRC Screenshot" />
+              <div class="project-details">
+                <div class="project-title">RAG Assistant for Customer Support</div>
+                <div class="desc">
+                  A RAG-powered application built to assist customer support agents with instant access to structured and unstructured knowledge from various internal knowledge bases. The assistant provides accurate, contextual responses in a single UI.
+                </div>
+                <div class="project-techs">
+                  <span>RAG</span>
+                  <span>AWS</span>
+                  <span>LLMs</span>
+                  <span>Cloud</span>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <img src="imgs/projects/ivr.png" alt="IVR Project Screenshot" />
+              <div class="project-details">
+                <div class="project-title">Smart IVR with ASR/NLU</div>
+                <div class="desc">
+                  A smart IVR system integrated with Speech Recognition (ASR) and Natural Language Understanding (NLU) to handle client requests in real time. Built on an enterprise-grade contact center platform using industry-standard MRCP architecture and validated with SIP-compliant testing tools.
+                </div>
+                <div class="project-techs">
+                  <span>ASR</span>
+                  <span>NLU</span>
+                  <span>MRCP</span>
+                  <span>Genesys Engage</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- BIO PAGE -->
+      <!-- CORRECTED AND ENRICHED BIO SECTION -->
+      <div id="bio" class="page page-popup fadeOut">
+        <img src="imgs/cross.png" alt="Close" class="bio-close-button" onclick="closePopup()">
+        <h1>My Story</h1>
+
+        <div class="bio-item">
+          <div class="bio-title"> Background <span class="expand"
+              onclick="var target = document.getElementById('bio-desc1'); target.classList.toggle('closed'); this.textContent = target.classList.contains('closed') ? '+' : '-';">–</span>
+          </div>
+          <div class="desc" id="bio-desc1">
+            <div class="open">
+                I started out deeply immersed in academia, earning a Ph.D. focused on NLP, Transformers, and Topic Modeling. It wasn’t just theory, I analyzed millions of tourism reviews, uncovering insights about what people loved (and didn’t). This really showed me the power of data to tell stories, and I've been hooked ever since on creating tools to help others see that too.
+            </div>
+          </div>
+        </div>
+        
+        <div class="bio-item">
+          <div class="bio-title"> The Leap to Product <span class="expand"
+              onclick="var target = document.getElementById('bio-desc2'); target.classList.toggle('closed'); this.textContent = target.classList.contains('closed') ? '+' : '-';">–</span>
+          </div>
+          <div class="desc" id="bio-desc2">
+            <div class="open">
+              After years as a Senior Data Scientist—working on everything from fraud detection in banking to forecasting sales for big brands' partners like  ECCBC, I noticed something: even the smartest models aren’t useful if they don't actually solve real problems, or if they're too complicated for anyone to use. That’s why I made the switch to Product Management: to bridge the gap between technical potential and practical solutions.
+            </div>
+          </div>
+        </div>
+
+        <div class="bio-item">
+          <div class="bio-title"> Core Expertise <span class="expand"
+              onclick="var target = document.getElementById('bio-desc3'); target.classList.toggle('closed'); this.textContent = target.classList.contains('closed') ? '+' : '-';">–</span>
+          </div>
+          <div class="desc" id="bio-desc3">
+            <div class="open">
+              My expertise is in building complete AI systems, especially in the exciting world of Generative AI. I specialize in setting up secure, on-premise solutions using open-source LLMs and Retrieval-Augmented Generation (RAG). Basically, I handle everything from coming up with the idea and designing the tech, all the way to getting the product out the door and scaling it up.
+            </div>
+          </div>
+        </div>
+
+        <div class="bio-item">
+          <div class="bio-title"> My Approach <span class="expand"
+              onclick="var target = document.getElementById('bio-desc4'); target.classList.toggle('closed'); this.textContent = target.classList.contains('closed') ? '+' : '-';">–</span>
+          </div>
+          <div class="desc" id="bio-desc4">
+            <div class="open">
+             I’m all about practical results. My strategy always starts with understanding the user's problem first, then working backwards to create a solution. I love the agility of moving fast—from prototypes and MVPs to setting clear KPIs and keeping everyone aligned. My role is to ask the right questions, get stakeholders on the same page, and clear obstacles so our tech teams can focus on doing what they do best.
+            </div>
+          </div>
+        </div>
+
+        <div class="bio-item">
+          <div class="bio-title"> Mentorship & Culture <span class="expand"
+              onclick="var target = document.getElementById('bio-desc5'); target.classList.toggle('closed'); this.textContent = target.classList.contains('closed') ? '+' : '-';">–</span>
+          </div>
+          <div class="desc" id="bio-desc5">
+            <div class="open">
+               One thing I genuinely love is seeing that "aha!" moment when someone finally gets a complex AI concept. I’m passionate about making AI accessible—running workshops, creating demos, and mentoring others. To me, inspiring people and simplifying the complex stuff is just as important as the tech itself.
+            </div>
+          </div>
+        </div>
+        
+        <div class="bio-item">
+          <div class="bio-title"> Spare time <span class="expand"
+              onclick="var target = document.getElementById('bio-desc6'); target.classList.toggle('closed'); this.textContent = target.classList.contains('closed') ? '+' : '-';">–</span>
+          </div>
+          <div class="desc" id="bio-desc6">
+            <div class="open">
+               Sometimes I like to build small side projects related to my field. It’s not just work, it's a passion of mine. Experimenting and creating these projects helps me stay connected to what I truly love doing, and often sparks new ideas and innovations.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- NEW: CASE STUDIES PAGE -->
+      <div id="case-studies" class="page page-popup fadeOut">
+        <img src="imgs/cross.png" alt="Close" class="bio-close-button" onclick="closePopup()">
+        <h1>Case Studies</h1>
+        <div class="list">
+          <div class="case-study-item">
+            <h3>On-Premise Generative AI Assistant</h3>
+            <p><strong>Problem:</strong> Employees lacked a secure, centralized way to query internal knowledge bases, leading to lost productivity and reliance on siloed information.</p>
+            <p><strong>Solution:</strong> Led the product strategy and development of a fully on-premise AI assistant. The system used RAG to securely access internal documents and integrated with company tools. Deployed with a privacy-first architecture to meet corporate compliance.</p>
+            <p><strong>Impact:</strong> Reduced query time for complex internal questions by an estimated 70% in pilot groups. Enhanced data security by keeping all sensitive information within the company's firewall.</p>
+          </div>
+          <div class="case-study-item">
+            <h3>RAG for Customer Support Knowledge Base</h3>
+            <!-- Anonymized -->
+            <p><strong>Problem:</strong> Support agents struggled to find accurate answers quickly, leading to longer resolution times and inconsistent service. Knowledge was split between a leading CRM platform and various internal documents.</p>
+            <p><strong>Solution:</strong> Developed and deployed a RAG application that unified structured CRM data and unstructured documents into a single, searchable interface. The assistant provided agents with instant, context-aware answers.</p>
+            <p><strong>Impact:</strong> Significantly decreased average call handling time and markedly improved first-call resolution rates, boosting agent confidence and customer satisfaction.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- NEW: AI RESEARCH PAGE -->
+      <div id="ai-research" class="page page-popup fadeOut">
+        <img src="imgs/cross.png" alt="Close" class="bio-close-button" onclick="closePopup()">
+        <h1>AI Research Publications</h1>
+        <div class="list">
+          <div class="research-item">
+            <h3>Analyzing tourism reviews using an LDA topic-based sentiment analysis approach</h3>
+            <p class="publication-source">Elsevier · Nov 5, 2022</p>
+            <p>This study's methodology employs a combination of topic modeling and sentiment analysis to extract valuable insights about Marrakech city from TripAdvisor reviews, allowing tourism practitioners to explore a destination's weaknesses and strengths.</p>
+            <!-- FIX: Added 'button' class -->
+            <a href="https://www.sciencedirect.com/science/article/pii/S2215016122002734" target="_blank" class="button publication-link trans" trans="Voir la publication">Show Publication</a>
+          </div>
+          <div class="research-item">
+            <h3>Exploring destination's negative e-reputation using aspect based sentiment analysis</h3>
+            <p class="publication-source">Elsevier · Oct 1, 2021</p>
+            <p>Analyzed 39,216 TripAdvisor reviews using NLP. Applied Topic Modelling (LDA) to extract different dimensions from reviews and used lexicon-based methods to evaluate the sentiment of topics, identifying key areas of negative e-reputation for the Marrakech destination.</p>
+            <!-- FIX: Added 'button' class -->
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S2211973621001057" target="_blank" class="button publication-link trans" trans="Voir la publication">Show Publication</a>
+          </div>
+          <div class="research-item">
+            <h3>Analyzing Emotions on Twitter During an Epidemic Situation (COVID-19)</h3>
+            <p class="publication-source">Journal of Tianjin University · Aug 20, 2021</p>
+            <p>Proposed an emotion detection model that uses machine learning and feature engineering to classify Coronavirus-related Tweets as joy, fear, anger, or sadness. The feature engineering approach significantly boosted classification accuracy over traditional methods.</p>
+            <!-- FIX: Added 'button' class -->
+            <a href="https://tianjindaxuexuebao.com/0493-2137-tju-v54-i08/" target="_blank" class="button publication-link trans" trans="Voir la publication">Show Publication</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: MY TOOLKIT PAGE -->
+      <div id="my-toolkit" class="page page-popup fadeOut">
+        <img src="imgs/cross.png" alt="Close" class="bio-close-button" onclick="closePopup()">
+        <h1>My Toolkit</h1>
+        <div class="toolkit-grid">
+          <div class="toolkit-category">
+            <h3>Product & Strategy</h3>
+            <div class="toolkit-tags">
+              <span>Agile Methodology</span><span>Product Management</span>
+              <span>Roadmap Planning</span><span>Jira</span><span>Confluence</span>
+              <span>Stakeholder Management</span><span>Change Management</span>
+              <span>User-Centered Design</span>
+            </div>
+          </div>
+          <div class="toolkit-category">
+            <h3>GenAI & Machine Learning</h3>
+            <div class="toolkit-tags">
+              <span>LLMs (Llama, Mistral)</span><span>RAG</span><span>Vector Databases</span>
+              <span>LangChain</span><span>Transformers</span><span>NLP</span>
+              <span>Sentiment Analysis</span><span>Topic Modeling</span>
+              <span>Scikit-learn</span><span>TensorFlow</span><span>PyTorch</span>
+            </div>
+          </div>
+          <div class="toolkit-category">
+            <h3>Data & Ops</h3>
+            <div class="toolkit-tags">
+              <span>Python (Pandas, NumPy)</span><span>SQL</span><span>ETL</span>
+              <span>Docker</span><span>On-Premise Deployment</span><span>AWS</span>
+              <span>MLOps</span><span>Data Governance</span>
+              <span>Feature Engineering</span>
+            </div>
+          </div>
+          <div class="toolkit-category">
+            <h3>Core Tech & Languages</h3>
+            <div class="toolkit-tags">
+              <span>Git</span><span>JavaScript</span><span>Scala</span><span>Java</span>
+              <span>REST APIs</span><span>Bash</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="techs-front">
+    <div class="tech">
+      <div class="toolkit-icon">🗺️</div>
+      <div class="trans" trans="Stratégie Produit IA">AI Product Strategy</div>
+    </div>
+    <div class="tech">
+      <div class="toolkit-icon">⚙️</div>
+      <div class="trans" trans="Systèmes ML de bout en bout">End-to-End ML Systems</div>
+    </div>
+    <div class="tech">
+      <div class="toolkit-icon">🔒</div>
+      <div class="trans" trans="Déploiement Sécurisé">Scalable & Secure Deployment</div>
+    </div>
+    <div class="tech">
+      <div class="toolkit-icon">🎯</div>
+      <div class="trans" trans="IA Centrée sur l'Humain">Human-Centered AI</div>
+    </div>
+  </div><img class="moon" src="imgs/gifs/moon.gif" alt="moon" />
+  <div class="bg-over">
+    <div class="bg-gif"></div>
+  </div><img alt="bg image " class="fly b1 easter-egg" src="imgs/gifs/b1.gif" loading="lazy" /> <img alt="bg image "
+    class="fly b2" src="imgs/gifs/b2.gif" loading="lazy" /> <img alt="bg image " class="fly b3" src="imgs/gifs/b3.gif"
+    loading="lazy" />
+  <div id="loading" class="fadeIn">
+    <div style="text-align: center">
+      <div><img src="imgs/gifs/loading.gif" width="50"
+          height="50" alt="bg image " loading="lazy" /></div>
+      <div style="margin-top: 10px">
+        <div class="button" id="loading-ready">Enter!</div>
+      </div>
+    </div>
+  </div>
+  <div id="pdfOverlay">
+    <div class="pdf-container">
+      <img src="imgs/cross.png" alt="Close" class="pdf-close-button"
+        onclick="document.getElementById('pdfOverlay').style.display='none';">
+      <embed src="imgs/CV_TWIL_Ali.pdf" type="application/pdf" />
+    </div>
+  </div>
+
+    <div id="terminal" class="hidden">
+    <div id="terminal-header">
+      <span>ALI-SHELL v1.0</span>
+      <span id="terminal-close" onclick="closeTerminal()">×</span>
+    </div>
+    <div id="terminal-output"></div>
+    <div id="terminal-input-line">
+      <span class="prompt">></span>
+      <input type="text" id="terminal-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+  <script src="js/vendors/xmplayer.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
